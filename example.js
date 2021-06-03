@@ -85,6 +85,41 @@ else {
 /* Hoisting là hành động mặc định của Javascript, nó sẽ chuyển phần khai báo lên phía trên top Trong Javascript, một biến (variable) có thể được khai báo sau khi được sử dụng 
    Phần khai báo hàm được đưa lên trước phần khai báo của biến
 */
+myNumber = 5;
+console.log(myNumber);
+var myNumber
 
+/* Chỉ hoisting với lệnh khai báo, còn lệnh khởi tạo sẽ không được hoisting */
+function callNumber() {
+  console.log(a)
+  var a = 35;
+}
 
+// Tương tự
+function callNumber() {
+  var a; // lệnh khai báo sẽ được hoisting
+
+  console.log(a) // giá trị của a sẽ là  undefined vì lúc này chưa được khởi tạo giá trị
+
+  a = 35; // lệnh khởi tạo không được hoisting
+}
+
+//Khai báo dữ liệu  kiểu mảng với toán tử new
+let arr = new Array(5);
+arr.push("a");
+
+//Khai báo dữ liệu kiểu object theo phương thức object literal
+let user = {
+  username: "Hai",
+  password: "123456"
+}
+
+// Khởi tạo biến kiểu object với toán tử new
+let people = new Object()
+people.name = "Hai";
+people.age = 25
+
+// Arrow function
+let sum = (a, b) => a + b;
+console.log(sum(2, 5)) // 7
 
