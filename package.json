@@ -1,0 +1,23 @@
+{
+  "name": "Practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoangDien17/VMO-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoangDien17/VMO-practice/issues"
+  },
+  "homepage": "https://github.com/HoangDien17/VMO-practice#readme",
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
